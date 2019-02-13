@@ -200,3 +200,5 @@ Related projects:
 A long established project. Shares a similar goal with Calendar::Dates (to
 provide a common interface for all Date::Holidays::* modules) but focuses on
 holidays only.
+
+=back
