@@ -101,13 +101,14 @@ required key (see L<DefHash> for more details on each key):
 
 =item * date*
 
-String. Either ISO8601 date in the format "<YYYY>-<MM>-<DD>" or
-"<YYYY>-<MM>-<DD>T<HH>:<MM>" or interval in the format of
-"<YYYY>-<MM>-<DD>T<HH>:<MM>/<HH>:<MM>".
+String. Either ISO8601 date in the format C<< YYYY-MM-DD >> or C<<
+YYYY-MM-DD"T"HH:MM >> or date interval in the format of C<<
+YYYY-MM-DD"T"HH:MM/HH:MM >>.
 
 Examples:
 
  2019-02-13
+ 2019-02-13T07:00
  2019-02-13T07:00/09:00
 
 Interval that spans day is currently not allowed. You might want to create
