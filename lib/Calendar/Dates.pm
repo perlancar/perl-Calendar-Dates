@@ -160,10 +160,43 @@ Boolean. You can also use tag C<holiday> to mark an entry as a holiday.
 
 =head1 SEE ALSO
 
-C<Calendar::DatesUtils> namespace for modules that make use of
-C<Calendar::Dates::*> modules, e.g. L<Calendar::DatesUtils::To::ICal>.
+Related namespaces:
 
-C<Calendar::DatesRoles> namespace.
+=over
 
-L<App::CalendarDatesUtils> which contain utilities like L<list-calendar-dates>,
-etc.
+=item * C<Calendar::DatesUtils>
+
+This is namespace for modules that make use of C<Calendar::Dates::*> modules,
+e.g. L<Calendar::DatesUtils::To::ICal>.
+
+=item * C<Calendar::DatesRoles>
+
+For roles related to Calendar::Dates.
+
+=back
+
+
+Related modules and applications:
+
+=over
+
+=item * L<App::CalendarDatesUtils>
+
+which contain utilities like L<list-calendar-dates>, etc.
+
+=item * L<calx> from L<App::calx>
+
+Uses Calendar::Dates::* to highlight dates.
+
+=back
+
+
+Related projects:
+
+=over
+
+=item * L<Date::Holidays>
+
+A long established project. Shares a similar goal with Calendar::Dates (to
+provide a common interface for all Date::Holidays::* modules) but focuses on
+holidays only.
