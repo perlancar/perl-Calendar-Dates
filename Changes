@@ -1,3 +1,8 @@
+0.1.2   2019-02-15 (PERLANCAR)
+
+	- Add role: Calendar::DatesRoles::PublicInterface::Basic.
+
+
 0.1.1   2019-02-13 (PERLANCAR)
 
 	- No spec changes.
