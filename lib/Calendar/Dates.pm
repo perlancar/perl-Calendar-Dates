@@ -130,13 +130,15 @@ Integer. Day of month number (1-31).
 
 =item * summary
 
-From DefHash specification. Should be in English. To specify summary in other
-language, use "summary.alt.lang.<LL>" keys.
+From DefHash specification. Can be in English or another language, but providing
+English version is recommended. To specify summary in other language, use
+"summary.alt.lang.<LL>" keys.
 
 =item * description
 
-From DefHash specification. Should be in English. To specify description in
-other language, use "description.alt.lang.<LL>" keys.
+From DefHash specification. Can be in English or another language, but providing
+English version is recommended. To specify description in other language, use
+"description.alt.lang.<LL>" keys.
 
 =item * tags
 
