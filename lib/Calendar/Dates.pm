@@ -90,12 +90,14 @@ latest years.
 
 Usage:
 
- my $records = Calendar::Dates::Foo->get_entries($year [, $mon [, $day ] ]);
+ my $entries = Calendar::Dates::Foo->get_entries([ \%params, ] $year [, $mon [, $day ] ]);
 
 Return entries for a particular year (or month, or day). Method must die if year
-(or month, or day) is not supported. Entries are arrayref, where each entry is a
-L<DefHash>. The following keys are recognized, an asterisk (C<*>) signifies
-required key (see L<DefHash> for more details on each key):
+(or month, or day) is not supported.
+
+B<Result.> Result is arrayref of entries, where each entry is a L<DefHash>. The
+following keys are recognized, an asterisk (C<*>) signifies required key (see
+L<DefHash> for more details on each key):
 
 =over
 
@@ -158,6 +160,15 @@ URL.
 Boolean. You can also use tag C<holiday> to mark an entry as a holiday.
 
 =back
+
+B<Optional parameters.> A hashref (parameters) can be specified as an optional
+first argument. It can be used to specify in more details what kind of entries
+are requested. For example, a Calendar::Dates::AU::Holiday module (Australian
+holiday calendar) contains different holidays for different provinces. User can
+specify:
+
+ # return 2019 holiday dates for Victoria
+ $entries = Calendar::Dates::AU::Holiday->get_entries({province=>'VIC'}, 2019);
 
 
 =head1 SEE ALSO
