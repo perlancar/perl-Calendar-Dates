@@ -1,22 +1,25 @@
+0.2.0   2019-05-25 (PERLANCAR)
+
+	[SPEC CHANGES]
+
+        - Allow first argument of get_entries() to be hashref (parameters).
+
+
 0.1.3   2019-02-15 (PERLANCAR)
 
-        - No role changes.
+        [SPEC CHANGES]
 
 	- Specify that summary and description need not be in English.
 
 
 0.1.2   2019-02-15 (PERLANCAR)
 
-        - No spec changes.
+        [ROLE CHANGES]
 
 	- Add role: Calendar::DatesRoles::PublicInterface::Basic.
 
 
 0.1.1   2019-02-13 (PERLANCAR)
-
-	- No spec changes.
-
-        - No role changes.
 
 	- [doc] Reorganize See Also section, mention Date::Holidays.
 
