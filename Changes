@@ -1,33 +1,34 @@
-0.1.5   2019-06-19 (PERLANCAR)
-
-	- Allow optional hashref options as the first argument to
-	  get_entries(). Define option 'all'.
-
-        - Define the meaning of tags 'low-priority' and 'anniversary'.
-
-
-0.1.4   2019-06-19 (PERLANCAR)
-
-	- No spec changes.
+0.2.1   2019-06-19 (PERLANCAR)
 
         - Add STATUS section.
 
-        - Add TODO about adding hashref opts in get_entries().
+        - get_entries(): Define parameter 'all'.
+
+        - Define the meaning of entry's tags: 'low-priority' and 'anniversary'.
+
+
+0.2.0   2019-05-25 (PERLANCAR)
+
+	[SPEC CHANGES]
+
+        - Allow first argument of get_entries() to be hashref (parameters).
 
 
 0.1.3   2019-02-15 (PERLANCAR)
+
+        [SPEC CHANGES]
 
 	- Specify that summary and description need not be in English.
 
 
 0.1.2   2019-02-15 (PERLANCAR)
 
+        [ROLE CHANGES]
+
 	- Add role: Calendar::DatesRoles::PublicInterface::Basic.
 
 
 0.1.1   2019-02-13 (PERLANCAR)
-
-	- No spec changes.
 
 	- [doc] Reorganize See Also section, mention Date::Holidays.
 

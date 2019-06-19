@@ -13,7 +13,7 @@ package Calendar::Dates;
 
 =head1 STATUS
 
-Draft series (0.1.x), expect to be stable in 0.2.x.
+Draft series (0.x), expect to be stable in 1.0.
 
 
 =head1 DESCRIPTION
@@ -96,13 +96,14 @@ latest years.
 
 Usage:
 
- my $entries = Calendar::Dates::Foo->get_entries([ \%opts , ] $year [, $mon [, $day ] ]);
+ my $entries = Calendar::Dates::Foo->get_entries([ \%params, ] $year [, $mon [, $day ] ]);
 
 Return entries for a particular year (or month, or day). Method must die if year
 (or month, or day) is not supported.
 
-B<Options.> The optional first hashref options can be specified for more complex
-querying/filtering. Currently known options:
+B<Parameters.> The optional C<%params> can be specified for more complex
+querying/filtering. Each calendar might support different parameters. Currently
+known common/standardized parameters:
 
 =over
 
@@ -113,7 +114,7 @@ included, e.g. low-priority entries (entries with tag C<low-priority>).
 
 =back
 
-B<Entries.> Entries are arrayref, where each entry is a L<DefHash>. The
+B<Result.> Result is arrayref of entries, where each entry is a L<DefHash>. The
 following keys are recognized, an asterisk (C<*>) signifies required key (see
 L<DefHash> for more details on each key):
 
@@ -181,6 +182,15 @@ URL.
 Boolean. You can also use tag C<holiday> to mark an entry as a holiday.
 
 =back
+
+B<Optional parameters.> A hashref (parameters) can be specified as an optional
+first argument. It can be used to specify in more details what kind of entries
+are requested. For example, a Calendar::Dates::AU::Holiday module (Australian
+holiday calendar) contains different holidays for different provinces. User can
+specify:
+
+ # return 2019 holiday dates for Victoria
+ $entries = Calendar::Dates::AU::Holiday->get_entries({province=>'VIC'}, 2019);
 
 
 =head1 SEE ALSO
