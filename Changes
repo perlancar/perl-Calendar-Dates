@@ -1,3 +1,11 @@
+0.1.5   2019-06-19 (PERLANCAR)
+
+	- Allow optional hashref options as the first argument to
+	  get_entries(). Define option 'all'.
+
+        - Define the meaning of tags 'low-priority' and 'anniversary'.
+
+
 0.1.4   2019-06-19 (PERLANCAR)
 
 	- No spec changes.
