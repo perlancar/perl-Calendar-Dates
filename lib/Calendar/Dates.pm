@@ -96,17 +96,26 @@ latest years.
 
 Usage:
 
- my $entries = Calendar::Dates::Foo->get_entries($year [, $mon [, $day ] ]);
+ my $entries = Calendar::Dates::Foo->get_entries([ \%opts , ] $year [, $mon [, $day ] ]);
 
 Return entries for a particular year (or month, or day). Method must die if year
 (or month, or day) is not supported.
 
-TODO: Add an optional first hashref argument to specify more querying options
-like filters, limits, etc.
+B<Options.> The optional first hashref options can be specified for more complex
+querying/filtering. Currently known options:
 
-Entries are arrayref, where each entry is a L<DefHash>. The following keys are
-recognized, an asterisk (C<*>) signifies required key (see L<DefHash> for more
-details on each key):
+=over
+
+=item * all
+
+Boolean. If set to true, will include all entries that are normally not
+included, e.g. low-priority entries (entries with tag C<low-priority>).
+
+=back
+
+B<Entries.> Entries are arrayref, where each entry is a L<DefHash>. The
+following keys are recognized, an asterisk (C<*>) signifies required key (see
+L<DefHash> for more details on each key):
 
 =over
 
@@ -153,8 +162,11 @@ English version is recommended. To specify description in other language, use
 
 =item * tags
 
-From DefHash specification. Some recommended/known tags: tentative, holiday,
-religious.
+From DefHash specification. Some recommended/known tags: B<tentative>,
+B<holiday>, B<religious>, B<low-priority> (entry with this tag by default should
+not be returned by L</get_entries> unless it specifies a true C<all> option),
+B<anniversary> (entry with this tag will repeat yearly and will be included in
+every (later) year).
 
 =item * url
 
