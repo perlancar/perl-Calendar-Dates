@@ -10,6 +10,12 @@ package Calendar::Dates;
 
 0.1
 
+
+=head1 STATUS
+
+Draft series (0.1.x), expect to be stable in 0.2.x.
+
+
 =head1 DESCRIPTION
 
 The C<Calendar::Dates::*> namespace is reserved for modules that provide
@@ -90,19 +96,24 @@ latest years.
 
 Usage:
 
- my $records = Calendar::Dates::Foo->get_entries($year [, $mon [, $day ] ]);
+ my $entries = Calendar::Dates::Foo->get_entries($year [, $mon [, $day ] ]);
 
 Return entries for a particular year (or month, or day). Method must die if year
-(or month, or day) is not supported. Entries are arrayref, where each entry is a
-L<DefHash>. The following keys are recognized, an asterisk (C<*>) signifies
-required key (see L<DefHash> for more details on each key):
+(or month, or day) is not supported.
+
+TODO: Add an optional first hashref argument to specify more querying options
+like filters, limits, etc.
+
+Entries are arrayref, where each entry is a L<DefHash>. The following keys are
+recognized, an asterisk (C<*>) signifies required key (see L<DefHash> for more
+details on each key):
 
 =over
 
 =item * date*
 
-String. Either ISO8601 date in the format C<< YYYY-MM-DD >> or C<<
-YYYY-MM-DD"T"HH:MM >> or date interval in the format of C<<
+String. Either ISO8601 date in the form of C<< YYYY-MM-DD >> or C<<
+YYYY-MM-DD"T"HH:MM >>, or date interval in the form of C<<
 YYYY-MM-DD"T"HH:MM/HH:MM >>.
 
 Examples:
