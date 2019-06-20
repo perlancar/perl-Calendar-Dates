@@ -112,6 +112,16 @@ known common/standardized parameters:
 Boolean. If set to true, will include all entries that are normally not
 included, e.g. low-priority entries (entries with tag C<low-priority>).
 
+=item * include_tags
+
+Array. If set, then only entries which contain all tags mentioned in this
+parameter should be included.
+
+=item * exclude_tags
+
+Array. If set, then entries which contain any of the tags mentioned in this
+parameter should NOT be included.
+
 =back
 
 B<Result.> Result is arrayref of entries, where each entry is a L<DefHash>. The
