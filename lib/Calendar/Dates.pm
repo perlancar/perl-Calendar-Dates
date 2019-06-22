@@ -13,7 +13,7 @@ package Calendar::Dates;
 
 =head1 STATUS
 
-Draft series (0.x), expect to be stable in 1.0.
+Draft series (0.x), expected to be stable in 1.0.
 
 
 =head1 DESCRIPTION
