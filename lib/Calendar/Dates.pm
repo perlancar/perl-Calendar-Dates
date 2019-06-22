@@ -35,7 +35,7 @@ Examples:
   Calendar::Dates::SG::FestivalsEvents
   Calendar::Dates::ID::Tax
 
-=item * Country-specific (public) holiday calendars go to XX::Holiday::*
+=item * Country-specific (public) holiday calendars go to <XX>::Holiday::*
 
 Examples:
 
