@@ -102,8 +102,9 @@ Return entries for a particular year (or month, or day). Method must die if year
 (or month, or day) is not supported.
 
 B<Parameters.> The optional C<%params> can be specified for more complex
-querying/filtering. Each calendar might support different parameters. Currently
-known common/standardized parameters:
+querying/filtering. Each calendar module might support different parameters, and
+should die if a parameter is unsupported. Currently known common/standardized
+parameters:
 
 =over
 
@@ -121,6 +122,11 @@ parameter should be included.
 
 Array. If set, then entries which contain any of the tags mentioned in this
 parameter should NOT be included.
+
+=item * q
+
+String. String/keyword matching. Only include entries that match this
+keyword/string.
 
 =back
 
