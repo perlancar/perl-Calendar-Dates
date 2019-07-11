@@ -1,4 +1,4 @@
-0.2.3   2019-06-22 (PERLANCAR)
+0.2.3   2019-06-22  Released-By: PERLANCAR
 
         [SPEC CHANGES]
 
@@ -8,7 +8,7 @@
         - get_entries(): Define 'q' parameter.
 
 
-0.2.2   2019-06-20 (PERLANCAR)
+0.2.2   2019-06-20  Released-By: PERLANCAR
 
 	[SPEC CHANGES]
 
@@ -16,7 +16,7 @@
 	  parameters.
 
 
-0.2.1   2019-06-19 (PERLANCAR)
+0.2.1   2019-06-19  Released-By: PERLANCAR
 
 	[SPEC CHANGES]
 
@@ -29,34 +29,34 @@
         - Add STATUS section.
 
 
-0.2.0   2019-05-25 (PERLANCAR)
+0.2.0   2019-05-25  Released-By: PERLANCAR
 
 	[SPEC CHANGES]
 
         - Allow first argument of get_entries() to be hashref (parameters).
 
 
-0.1.3   2019-02-15 (PERLANCAR)
+0.1.3   2019-02-15  Released-By: PERLANCAR
 
         [SPEC CHANGES]
 
 	- Specify that summary and description need not be in English.
 
 
-0.1.2   2019-02-15 (PERLANCAR)
+0.1.2   2019-02-15  Released-By: PERLANCAR
 
         [ROLE CHANGES]
 
 	- Add role: Calendar::DatesRoles::PublicInterface::Basic.
 
 
-0.1.1   2019-02-13 (PERLANCAR)
+0.1.1   2019-02-13  Released-By: PERLANCAR
 
 	[DOCUMENTATION]
 
         - Reorganize See Also section, mention Date::Holidays.
 
 
-0.1.0    2019-02-12 (PERLANCAR)
+0.1.0    2019-02-12  Released-By: PERLANCAR
 
          - First release.
